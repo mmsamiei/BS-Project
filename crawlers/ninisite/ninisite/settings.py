@@ -64,9 +64,13 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'ninisite.pipelines.NinisitePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'ninisite.pipelines.MongoDBPipeline': 300,
+}
+MONGODB_SERVER = 'localhost'
+MONGODB_PORT = 27017
+MONGODB_DB = 'scraping'
+MONGODB_COLLECTION = 'ninisite'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -88,3 +92,4 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+FEED_EXPORT_ENCODING = 'utf-8'
