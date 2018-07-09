@@ -41,5 +41,6 @@ class ShortermSpider(scrapy.Spider):
         yield{
             'title': topic_title,
             'body': main_post_message_text,
-            'url': topic_url
+            'url': topic_url,
+            'checked': 0
         }
