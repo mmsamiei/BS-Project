@@ -42,5 +42,5 @@ class ShortermSpider(scrapy.Spider):
             'title': topic_title,
             'body': main_post_message_text,
             'url': topic_url,
-            'checked': 0
+            'checked': False
         }
