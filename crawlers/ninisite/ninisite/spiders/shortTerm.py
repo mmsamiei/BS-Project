@@ -28,6 +28,8 @@ class ShortermSpider(scrapy.Spider):
             topic_absolute_link = response.urljoin(topic_link)
             if self.collection.find_one({'url':topic_absolute_link}) is None:
                 yield scrapy.Request(url=topic_absolute_link, callback=self.parse_topic_page)
+            else:
+                return
         next_page_link = response.xpath('//*[contains(@class, "page-link")][@title="Next page"]/@href').extract_first()
         if next_page_link is not None:
             next_page_absolute_link = response.urljoin(next_page_link)
