@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for ninisite project
+# Scrapy settings for applyabroad project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'ninisite'
+BOT_NAME = 'applyabroad'
 
-SPIDER_MODULES = ['ninisite.spiders']
-NEWSPIDER_MODULE = 'ninisite.spiders'
+SPIDER_MODULES = ['applyabroad.spiders']
+NEWSPIDER_MODULE = 'applyabroad.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'ninisite (+http://www.yourdomain.com)'
+#USER_AGENT = 'applyabroad (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'ninisite.middlewares.NinisiteSpiderMiddleware': 543,
+#    'applyabroad.middlewares.ApplyabroadSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'ninisite.middlewares.NinisiteDownloaderMiddleware': 543,
+#    'applyabroad.middlewares.ApplyabroadDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,13 +65,12 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'ninisite.pipelines.MongoDBPipeline': 300,
+    'applyabroad.pipelines.MongoDBPipeline': 300,
 }
 MONGODB_SERVER = 'localhost'
 MONGODB_PORT = 27017
 MONGODB_DB = 'scraping'
-MONGODB_COLLECTION = 'ninisite'
-
+MONGODB_COLLECTION = 'applyabroad'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
