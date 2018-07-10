@@ -31,14 +31,19 @@ class ApplyabroadspiderSpider(scrapy.Spider):
     def topic_page(self, response):
         posts_link = response.xpath('//div[@id="content"]//a/@href').extract()
         for post_link in posts_link:
-            yield scrapy.Request(url=post_link, callback=self.post_page)
+            if self.collection.find_one({'url':post_link}) is None:
+                yield scrapy.Request(url=post_link, callback=self.post_page)
+            else:
+                print("YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY")
+                break
         print("4")
 
     def post_page(self, response):
         post_body = ' '.join(response.xpath('//div[@class="posttext"]')[0].xpath('./text()').extract())
+        post_title = response.xpath('//p[@class="largefont"]/a/text()').extract_first()
         post_url = response.request.url
         yield{
-            'title': '',
+            'title': post_title,
             'body': post_body,
             'url': post_url,
             'checked': False
