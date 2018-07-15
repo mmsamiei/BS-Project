@@ -34,7 +34,6 @@ class ApplyabroadspiderSpider(scrapy.Spider):
             if self.collection.find_one({'url':post_link}) is None:
                 yield scrapy.Request(url=post_link, callback=self.post_page)
             else:
-                print("YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY")
                 break
         print("4")
 
