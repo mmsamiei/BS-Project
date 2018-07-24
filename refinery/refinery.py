@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import pprint
 import hazm as hazm
-
+from mazm import Mazm as mazm
 class Refinery:
     mongo_server = 'localhost'
     mongo_port = 27017
@@ -19,12 +19,9 @@ class Refinery:
         for post in collection.find({"checked": False}):
             self.refine_post(post)
     def refine_post(self, post):
-        new_title = self.my_normalizer(post['title'])
-        new_body = self.my_normalizer(post['body'])
-    def my_normalizer(self, string):
-        normalizer = hazm.Normalizer()
-        result = normalizer.normalize(string)
-        return result
+        new_title = mazm.my_normalizer(post['title'])
+        new_body = mazm.my_normalizer(post['body'])
+        print(new_title)
 if __name__ == "__main__":
     refinery = Refinery()
     refinery.start()
