@@ -1,4 +1,0 @@
-MONGODB_SERVER = 'localhost'
-MONGODB_PORT = 27017
-MONGODB_DB = 'scraping'
-MONGODB_COLLECTION = 'test'
