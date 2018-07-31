@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 scrapy = "*"
 pymongo = "*"
-hazm = "*"
+"588b7dc" = {file = "https://github.com/sobhe/hazm/archive/master.zip"}
 
 [dev-packages]
 
