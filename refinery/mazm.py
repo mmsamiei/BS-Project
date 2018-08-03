@@ -1,5 +1,5 @@
 import hazm as hazm
-
+from PersianStemmer import PersianStemmer
 
 
 class Mazm:
@@ -19,8 +19,9 @@ class Mazm:
         return corrected_words[0]
     
     def my_lemmatizer(string):
-        stemmer = hazm.Stemmer()
+        ps = PersianStemmer()
         lemmatizer = hazm.Lemmatizer()
+        current = ps.run(string)
         current = lemmatizer.lemmatize(string)
         # new = stemmer.stem(current)
         # while(current != new):

@@ -18,6 +18,7 @@ class InvertedIndex():
         source_collection = self.db[InvertedIndex.source_collections_name]
         for post in source_collection.find({"checked": False}):
             self.create_form_post(post)
+            source_collection.update_one({'_id': post['_id']}, {'$set': {'checked': True}})
         
     def create_form_post(self, post):
         text = post['title'] + " " + post['body']

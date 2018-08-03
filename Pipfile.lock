@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9bc059f0a93afd57233f3250138ee20c2a8b657648a9fd295547c17e8246507f"
+            "sha256": "608c41de219808f3aefac34e8010ecc0b0ff1d319b433ecd923ea00aa165b4c5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -173,6 +173,19 @@
                 "sha256:b24618fe81dce29d717aa8c4a9534c46e807dd6a5c8d5e1bb3b1fdb3fbd22b56"
             ],
             "version": "==1.5.0"
+        },
+        "patricia-trie": {
+            "hashes": [
+                "sha256:65a35219bf211b4e4b34bdd9e858c008e1699e23c43b3fb4542726c996966bae"
+            ],
+            "version": "==10"
+        },
+        "persianstemmer": {
+            "hashes": [
+                "sha256:6ad5ab0217da6c35ed8d0e7101e1d739657af1d7093390e51cbea5124c4ad5d9"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
         },
         "pyasn1": {
             "hashes": [
