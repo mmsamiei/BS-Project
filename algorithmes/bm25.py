@@ -2,6 +2,7 @@ import sys
 sys.path.insert(0, "..")
 from refinery.mazm import Mazm as mazm
 from pymongo import MongoClient
+import math
 
 class BM25:
     mongo_server = 'localhost'
@@ -29,7 +30,8 @@ class BM25:
         query_word_list = [word for word in query_word_list if word not in self.stop_words]
         scores = {}
         for q in query_word_list:
-            print(self.idf(q))
+            x = self.idf(q)
+            print(x)
         print(query_word_list)
         return (" ".join(query_word_list))
 
@@ -38,9 +40,12 @@ class BM25:
     
     def idf(self, word):
         N = self.documents_collection.count_documents({})
-        print(N)
+        temp = self.iverted_index_collection.find_one({"word":word})
+        nq = len(temp['documents'])
+        idf_result = math.log((N-nq+0.5)/(nq+0.5))
+        return idf_result
         
 if __name__ == "__main__":
     bm25 = BM25()
-    bm25.search("من زنده هستم و شما را می پرستم")
+    bm25.search("بچه خواه خوان")
     
