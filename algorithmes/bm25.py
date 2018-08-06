@@ -13,8 +13,8 @@ class BM25:
     def __init__(self):
         self.client = MongoClient(BM25.mongo_server, BM25.mongo_port)
         self.db = self.client[BM25.mongo_database]
-        documents_collection = self.db[BM25.documents_collection_name]
-        iverted_index_collection = self.db[BM25.inverted_index_collections_name]
+        self.documents_collection = self.db[BM25.documents_collection_name]
+        self.iverted_index_collection = self.db[BM25.inverted_index_collections_name]
         self.stop_words = set()
         stop_word_file = open("../refinery/PersianStopWordList.txt", "r")
         temp = stop_word_file.read().splitlines() 
@@ -29,9 +29,16 @@ class BM25:
         query_word_list = [word for word in query_word_list if word not in self.stop_words]
         scores = {}
         for q in query_word_list:
-            pass
+            print(self.idf(q))
         print(query_word_list)
         return (" ".join(query_word_list))
+
+    def get_scores(word):
+        pass
+    
+    def idf(self, word):
+        N = self.documents_collection.count_documents({})
+        print(N)
         
 if __name__ == "__main__":
     bm25 = BM25()
