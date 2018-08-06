@@ -45,7 +45,9 @@ class BM25:
             for document in documents:
                 doc_id = document['id']
                 freq = document['num'] 
-                document_len = 0 #TODO
+                document_len = self.get_doc_len(document['id'])
+                print(doc_id)
+                print(document_len)
                 avgdl = self.avg_dl
                 score = (self.idf(word) * freq *  (BM25.K1 + 1)) / (freq + BM25.K1 * ( 1 - BM25.B + BM25.B * (document_len / avgdl)))
                 result[doc_id] = score;
@@ -81,7 +83,9 @@ class BM25:
             total_size = total_size + len(document['title'].split()) + len (document['body'].split())
         return total_size/N;
 
-    
+    def get_doc_len(self, object_id):
+        temp = self.documents_collection.find_one({"_id":object_id})
+        return len(temp['title'].split()) + len(temp['body'].split())
 
 if __name__ == "__main__":
     bm25 = BM25()
