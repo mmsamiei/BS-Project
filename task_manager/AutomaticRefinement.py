@@ -6,7 +6,7 @@ class AutomaticRefinement(MyPeriodic):
 
     def __init__(self, interval):
         MyPeriodic.__init__(self, interval)
-        os.chdir("../refinery/ninisite/ninisite/")
+        os.chdir("../refinery/")
     
     def foo2(self):
         os.system("python3 refinery.py")
