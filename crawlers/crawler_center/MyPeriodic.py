@@ -5,9 +5,8 @@ import datetime
 
 class MyPeriodic():
 
-    def __init__(self, foo2, interval):
+    def __init__(self, interval):
         self.interval = interval 
-        self.foo2 = foo2
         self.i = 0
     
     def start(self):
@@ -25,12 +24,13 @@ class MyPeriodic():
     def change_interval(self, new_interval):
         self.interval = new_interval
 
+    def foo2(self):
+        global i
+        print("Runned!" + str(i))
 
-def my_foo():
-    print("1")
 
 if __name__ == "__main__":
-    my_thread = MyPeriodic(my_foo, 1)
+    my_thread = MyPeriodic(1)
     my_thread.start()
     time.sleep(6)
     my_thread.change_interval(2)
