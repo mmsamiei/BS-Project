@@ -6,7 +6,7 @@ class ApplyabroadAutomaticCrawler(MyPeriodic):
 
     def __init__(self, interval):
         MyPeriodic.__init__(self, interval)
-        os.chdir("../applyabroad/applyabroad/")
+        os.chdir("../crawlers/ninisite/ninisite/")
     
     def foo2(self):
         os.system("scrapy crawl applyabroadSpider")
