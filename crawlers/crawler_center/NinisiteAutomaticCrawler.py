@@ -13,5 +13,5 @@ class NinisiteAutomaticCrawler(MyPeriodic):
         print("finish crawl ninisite")
 
 if __name__ == "__main__":
-    my_crawler = NinisiteAutomaticCrawler(20)
+    my_crawler = NinisiteAutomaticCrawler(30)
     my_crawler.start()
