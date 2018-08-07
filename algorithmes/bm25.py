@@ -35,7 +35,8 @@ class BM25:
         for q in query_word_list:
             temp_scores = self.get_scores(q)
             scores = self.merge_scores(scores, temp_scores)
-        print(scores)
+        sorted_by_value = sorted(scores.items(), key=lambda kv: -1*kv[1])
+        print(sorted_by_value)
 
     def get_scores(self, word):
         result = {}
@@ -46,8 +47,6 @@ class BM25:
                 doc_id = document['id']
                 freq = document['num'] 
                 document_len = self.get_doc_len(document['id'])
-                print(doc_id)
-                print(document_len)
                 avgdl = self.avg_dl
                 score = (self.idf(word) * freq *  (BM25.K1 + 1)) / (freq + BM25.K1 * ( 1 - BM25.B + BM25.B * (document_len / avgdl)))
                 result[doc_id] = score;
