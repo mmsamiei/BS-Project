@@ -19,7 +19,7 @@ class BM25:
         self.iverted_index_collection = self.db[BM25.inverted_index_collections_name]
         self.stop_words = set()
         self.avg_dl = self.get_avg_dl()
-        stop_word_file = open("../refinery/PersianStopWordList.txt", "r")
+        stop_word_file = open("task_manager/refinery/PersianStopWordList.txt", "r")
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
