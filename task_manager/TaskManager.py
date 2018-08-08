@@ -1,6 +1,7 @@
 import ApplyabroadAutomaticCrawler, NinisiteAutomaticCrawler, AutomaticInvertedIndex, AutomaticRefinement
 import os
 import sys
+import time 
 
 sys.path.insert(0, "..")
 
@@ -18,6 +19,9 @@ class TaskManager():
         self.automatic_inverted_index.start()
         self.automatic_refinement.start()
 
+
 if __name__ == "__main__":
     task_manager = TaskManager()
     task_manager.start()
+    time.sleep(120)
+    task_manager.apply_abroad_automaticCrawler.change_interval(10)

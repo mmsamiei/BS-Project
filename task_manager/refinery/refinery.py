@@ -1,7 +1,10 @@
 from pymongo import MongoClient
 import pprint
 import hazm as hazm
-from mazm import Mazm as mazm
+import sys
+from refinery.mazm import Mazm as mazm
+import os
+
 class Refinery:
     stop_words = set()
     mongo_server = 'localhost'
@@ -15,7 +18,8 @@ class Refinery:
         self.db = self.client[Refinery.mongo_database]
         self.string = "ss"
         self.stop_words = set()
-        stop_word_file = open("PersianStopWordList.txt", "r")
+        os.system("pwd")
+        stop_word_file = open("./refinery/PersianStopWordList.txt", "r")
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
@@ -52,5 +56,6 @@ class Refinery:
         return (" ".join(text_list))
                 
 if __name__ == "__main__":
+    from mazm import Mazm as mazm
     refinery = Refinery()
     refinery.start()

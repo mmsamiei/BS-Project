@@ -6,10 +6,12 @@ class ApplyabroadAutomaticCrawler(MyPeriodic):
 
     def __init__(self, interval):
         MyPeriodic.__init__(self, interval)
-        os.chdir("../crawlers/applyabroad/applyabroad/")
+        #os.chdir("../crawlers/applyabroad/applyabroad/")
     
     def foo2(self):
-        os.system("scrapy crawl applyabroadSpider")
+        #os.system("scrapy crawl applyabroadSpider")
+        print("\t \t \t *** START APPLYABROAD")
+        os.system("python3 applyabroad_script_wraper.py")
         print("finish crawl applyabroad")
 
 if __name__ == "__main__":

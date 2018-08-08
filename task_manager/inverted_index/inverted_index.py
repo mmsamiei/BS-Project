@@ -13,7 +13,6 @@ class InvertedIndex():
         self.client = MongoClient(InvertedIndex.mongo_server, InvertedIndex.mongo_port)
         self.db = self.client[InvertedIndex.mongo_database]
         
-    
     def start(self):
         source_collection = self.db[InvertedIndex.source_collections_name]
         for post in source_collection.find({"checked": False}):
