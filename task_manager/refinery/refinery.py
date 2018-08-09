@@ -27,7 +27,10 @@ class Refinery:
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
-    
+        stop_word_file = open("../refinery/NonverbalStopList.txt", "r")
+        temp = stop_word_file.read().splitlines() 
+        for line in temp:
+            self.stop_words.add(line)
     def start(self):
         for collection_name in Refinery.collections_name:
             collection = self.db[str(collection_name)]
