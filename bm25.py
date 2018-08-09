@@ -23,6 +23,10 @@ class BM25:
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
+        stop_word_file = open("task_manager/refinery/StopCharList.txt", "r")
+        temp = stop_word_file.read().splitlines() 
+        for line in temp:
+            self.stop_words.add(line)
 
     def search(self, query):
         new_query = mazm.my_normalizer(query)
@@ -87,5 +91,5 @@ class BM25:
 
 if __name__ == "__main__":
     bm25 = BM25()
-    bm25.search("بچه ععععععععع خوان")
+    bm25.search("ما با ماجراهای متنوعی مواجه شدیم")
     

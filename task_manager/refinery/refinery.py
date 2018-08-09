@@ -10,7 +10,7 @@ class Refinery:
     mongo_server = 'localhost'
     mongo_port = 27017
     mongo_database = 'scraping'
-    collections_name = ['test']
+    collections_name = ['applyabroad', 'ninisite']
     destination_collection_name = 'refined'
     
     def __init__(self):
@@ -20,6 +20,10 @@ class Refinery:
         self.stop_words = set()
         os.system("pwd")
         stop_word_file = open("./refinery/PersianStopWordList.txt", "r")
+        temp = stop_word_file.read().splitlines() 
+        for line in temp:
+            self.stop_words.add(line)
+        stop_word_file = open("../refinery/StopCharList.txt", "r")
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
