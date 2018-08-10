@@ -40,6 +40,7 @@ class BM25:
         query_word_list = [word for word in query_word_list if word not in self.stop_words]
         scores = {}
         for q in query_word_list:
+            print(q)
             temp_scores = self.get_scores(q)
             scores = self.merge_scores(scores, temp_scores)
         sorted_by_value = sorted(scores.items(), key=lambda kv: -1*kv[1])
