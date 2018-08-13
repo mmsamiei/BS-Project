@@ -37,7 +37,6 @@ class TebyanspiderSpider(scrapy.Spider):
         driver = webdriver.Firefox(executable_path='/home/mahdi/Public/BS_Project/crawlers/geckodriver')
         driver.get(response.request.url)
         for i in range(0,10):
-            print(i)
             driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
         sel = Selector(text = driver.page_source)
         questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()

@@ -40,8 +40,6 @@ class PosrakspiderSpider(scrapy.Spider):
         question_url = response.request.url
         question_body = re.sub(' +', ' ', question_body)
         question_body = " ".join(question_body.split())
-        print(question_body)
-        print(question_title)
         if question_body == question_title:
             question_body = ""
         yield{
