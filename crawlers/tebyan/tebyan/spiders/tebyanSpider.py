@@ -35,22 +35,25 @@ class TebyanspiderSpider(scrapy.Spider):
 
     def questions_page(self, response):
         driver = webdriver.Firefox(executable_path='/home/mahdi/Public/BS_Project/crawlers/geckodriver')
-        driver.get(response.request.url)
-        for i in range(0,10):
-            driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
-        sel = Selector(text = driver.page_source)
-        questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()
-        questions_bodies = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a/text()').extract()
-        questions = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a')
-        for question in questions:
-            question_link = response.urljoin(question.xpath('./@href').extract_first())
-            question_body = ' '.join(question.xpath('./text()').extract())
-            yield{
-            'title': "",
-            'body': question_body,
-            'url': question_link,
-            'checked': False
-            }
+        try:
+            driver.get(response.request.url)
+            for i in range(0,10):
+                driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
+            sel = Selector(text = driver.page_source)
+            questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()
+            questions_bodies = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a/text()').extract()
+            questions = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a')
+            for question in questions:
+                question_link = response.urljoin(question.xpath('./@href').extract_first())
+                question_body = ' '.join(question.xpath('./text()').extract())
+                yield{
+                'title': "",
+                'body': question_body,
+                'url': question_link,
+                'checked': False
+                }
+        except:
+            pass
         driver.quit()
             
 
