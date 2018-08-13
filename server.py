@@ -16,5 +16,12 @@ def idf():
     result['idf'] = bm25.idf(word)
     return jsonify(result)
 
+@app.route('/search', methods=['GET'])
+def search():
+    word = request.args.get('q')
+    bm25 = BM25()
+    results = bm25.search(word)
+    return jsonify(results)
+
 if __name__ == '__main__':
     app.run()

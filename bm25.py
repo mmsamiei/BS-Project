@@ -44,7 +44,17 @@ class BM25:
             temp_scores = self.get_scores(q)
             scores = self.merge_scores(scores, temp_scores)
         sorted_by_value = sorted(scores.items(), key=lambda kv: -1*kv[1])
-        print(sorted_by_value)
+        results = list()
+        for post in sorted_by_value:
+            temp = self.documents_collection.find_one({'_id':post[0]})
+            new_result = {
+                'title' : temp['title'],
+                'body' : temp['body'],
+                'url' : temp['url']
+            }
+            results.append(new_result)
+        print(results)
+        return results
 
     def get_scores(self, word):
         result = {}
