@@ -14,8 +14,8 @@ class Mazm:
         alphabet = ['ض','ص','ث','ق','ف','غ','ع','ه','خ','ح','ج','چ','ش','س','ی','ب','ل','ا'
         ,'ت','ن','م','ک','گ','ظ','ط','ز','ر','ذ','د','پ','و']
         for char in alphabet:
-        reg = char+char+char+'('+char+'*'+')'
-        result = re.sub(reg,char, text)
+            reg = char+char+char+'('+char+'*'+')'
+            result = re.sub(reg,char, text)
         return result
     
     def my_word_tokenizer(string):
