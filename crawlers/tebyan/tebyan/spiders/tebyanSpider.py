@@ -23,8 +23,8 @@ class TebyanspiderSpider(scrapy.Spider):
     def start_requests(self):
         urls = [
             'https://www.tebyan.net/newindex.aspx?pid=851&GroupParentID=391',
-            'https://moshavere.tebyan.net/newindex.aspx?pid=851&GroupParentID=386',
-            'https://moshavere.tebyan.net/newindex.aspx?pid=851&GroupParentID=387',
+            'https://www.tebyan.net/newindex.aspx?pid=851&GroupParentID=386',
+            'https://www.tebyan.net/newindex.aspx?pid=851&GroupParentID=387',
             'https://moshavere.tebyan.net/newindex.aspx?pid=851&GroupParentID=1136'
         ]
         for url in urls:
@@ -42,14 +42,14 @@ class TebyanspiderSpider(scrapy.Spider):
         sel = Selector(text = driver.page_source)
         questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()
         questions_bodies = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a/text()').extract()
-        print("****************************************")
-        for item in zip(questions_links, questions_bodies):
-            question_url = response.urljoin(item[0])
-            question_body = item[1]
+        questions = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a')
+        for question in questions:
+            question_link = response.urljoin(question.xpath('./@href').extract_first())
+            question_body = ' '.join(question.xpath('./text()').extract())
             yield{
             'title': "",
             'body': question_body,
-            'url': question_url,
+            'url': question_link,
             'checked': False
             }
         driver.quit()
