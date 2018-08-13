@@ -18,7 +18,7 @@ class TebyanspiderSpider(scrapy.Spider):
         db = connection[settings['MONGODB_DB']]
         self.collection = db[settings['MONGODB_COLLECTION']]
         #TODO
-        self.driver = webdriver.Firefox(executable_path='/home/mahdi/Public/BS_Project/crawlers/geckodriver')
+        #self.driver = webdriver.Firefox(executable_path='/home/mahdi/Public/BS_Project/crawlers/geckodriver')
 
     def start_requests(self):
         urls = [
@@ -27,20 +27,19 @@ class TebyanspiderSpider(scrapy.Spider):
             'https://moshavere.tebyan.net/newindex.aspx?pid=851&GroupParentID=387',
             'https://moshavere.tebyan.net/newindex.aspx?pid=851&GroupParentID=1136'
         ]
-        #for url in urls:
-        #    self.driver.get(url)
-        #    yield scrapy.Request(url=url, callback=self.questions_page)
+        for url in urls:
+            #self.driver.get(url)
+            yield scrapy.Request(url=url, callback=self.questions_page)
         #self.driver.quit()
 
-    def pipeline(url):
-        pass
 
     def questions_page(self, response):
-        
+        driver = webdriver.Firefox(executable_path='/home/mahdi/Public/BS_Project/crawlers/geckodriver')
+        driver.get(response.request.url)
         for i in range(0,10):
             print(i)
-            self.driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
-        sel = Selector(text = self.driver.page_source)
+            driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
+        sel = Selector(text = driver.page_source)
         questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()
         questions_bodies = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a/text()').extract()
         print("****************************************")
@@ -53,6 +52,7 @@ class TebyanspiderSpider(scrapy.Spider):
             'url': question_url,
             'checked': False
             }
+        driver.quit()
             
 
 
