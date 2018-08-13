@@ -10,7 +10,7 @@ class Mazm:
         result = self.remove_duplicate_consecutive(result)
         return result
 
-    def remove_duplicate_consecutive(text):
+    def remove_duplicate_consecutive(self, text):
         alphabet = ['ض','ص','ث','ق','ف','غ','ع','ه','خ','ح','ج','چ','ش','س','ی','ب','ل','ا'
         ,'ت','ن','م','ک','گ','ظ','ط','ز','ر','ذ','د','پ','و']
         for char in alphabet:

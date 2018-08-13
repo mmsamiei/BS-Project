@@ -23,11 +23,11 @@ class Refinery:
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
-        stop_word_file = open("../refinery/StopCharList.txt", "r")
+        stop_word_file = open("./refinery/StopCharList.txt", "r")
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
-        stop_word_file = open("../refinery/NonverbalStopList.txt", "r")
+        stop_word_file = open("./refinery/NonverbalStopList.txt", "r")
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
