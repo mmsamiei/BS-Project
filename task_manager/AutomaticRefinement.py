@@ -13,6 +13,7 @@ class AutomaticRefinement(MyPeriodic):
     
     def foo2(self):
         #os.system("python3 refinery.py")
+        print("start refinery")
         self.refinery.start()
         print("finish refinery")
 

@@ -394,3 +394,25 @@ JavaScript error: resource:///modules/FormSubmitObserver.jsm, line 214: TypeErro
 1534145228732	Marionette	WARN	TLS certificate errors will be ignored for this session
 1534145255771	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1534196303442	geckodriver	INFO	geckodriver 0.21.0
+1534196303552	geckodriver	INFO	Listening on 127.0.0.1:59575
+1534196305430	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mwpMCHPcoiZP"
+1534196325042	Marionette	INFO	Listening on port 34519
+1534196325244	Marionette	WARN	TLS certificate errors will be ignored for this session
+1534196335383	geckodriver	INFO	geckodriver 0.21.0
+1534196335389	geckodriver	INFO	Listening on 127.0.0.1:49869
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1534196337389	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3rJb0dU2EXud"
+1534196344520	Marionette	INFO	Listening on port 41357
+1534196344608	Marionette	WARN	TLS certificate errors will be ignored for this session
+1534196346508	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 185"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:185
+onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:201
+_middleware/</<()@resource://activity-stream/lib/Store.jsm:49
+Store/this[method]()@resource://activity-stream/lib/Store.jsm:28
+uninit()@resource://activity-stream/lib/Store.jsm:151
+uninit()@resource://activity-stream/lib/ActivityStream.jsm:300
+uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:73
+shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:169
+callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
+observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

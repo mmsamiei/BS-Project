@@ -10,7 +10,7 @@ class Refinery:
     mongo_server = 'localhost'
     mongo_port = 27017
     mongo_database = 'scraping'
-    collections_name = ['applyabroad', 'ninisite']
+    collections_name = ['applyabroad','javabyab','ninisite','porsak','tebyan']
     destination_collection_name = 'refined'
     
     def __init__(self):
