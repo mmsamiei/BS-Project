@@ -8,6 +8,7 @@ scrapy = "*"
 pymongo = "*"
 "588b7dc" = {file = "https://github.com/sobhe/hazm/archive/master.zip"}
 persianstemmer = "*"
+selenium = "*"
 
 [dev-packages]
 
