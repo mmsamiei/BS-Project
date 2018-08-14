@@ -13,6 +13,7 @@ class AutomaticInvertedIndex(MyPeriodic):
     
     def foo2(self):
         #os.system("python3 inverted_index.py")
+        print("start inverted index")
         self.inverted_index.start()
         print("finish inverted index")
 

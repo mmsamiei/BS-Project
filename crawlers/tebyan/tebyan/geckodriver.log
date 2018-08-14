@@ -129,3 +129,118 @@ shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/
 callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4436
 observe()@resource://gre/modules/addons/XPIProvider.jsm:2287
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1534237648150	geckodriver	INFO	geckodriver 0.21.0
+1534237648229	geckodriver	INFO	Listening on 127.0.0.1:57127
+1534237648344	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.J6J06MxbK3Uh"
+1534237654438	Marionette	INFO	Listening on port 33929
+1534237654470	Marionette	WARN	TLS certificate errors will be ignored for this session
+1534237689953	geckodriver	INFO	geckodriver 0.21.0
+1534237689957	geckodriver	INFO	Listening on 127.0.0.1:38655
+1534237690137	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8qRxfuHNrU7P"
+1534237694161	Marionette	INFO	Listening on port 37443
+1534237694246	Marionette	WARN	TLS certificate errors will be ignored for this session
+1534237742402	geckodriver	INFO	geckodriver 0.21.0
+1534237742406	geckodriver	INFO	Listening on 127.0.0.1:42439
+1534237742584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lPtnnl9cWLA9"
+1534237745972	Marionette	INFO	Listening on port 36753
+1534237745994	Marionette	WARN	TLS certificate errors will be ignored for this session
+1534237762304	geckodriver	INFO	geckodriver 0.21.0
+1534237762308	geckodriver	INFO	Listening on 127.0.0.1:53579
+1534237762493	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.bUaFP73hEbXr"
+[Parent 5075, Gecko_IOThread] WARNING: pipe error (75): Connection reset by peer: file /build/firefox-m9FtQy/firefox-60.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 5075, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-m9FtQy/firefox-60.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007E,name=PBrowser::Msg_LoadRemoteScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x150001,name=PBrowser::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0041,name=PContent::Msg_LoadProcessScript) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0105,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C001F,name=PContent::Msg_PreferenceUpdate) Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel error: cannot send/recv
+
+[Parent 5075, Main Thread] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox-m9FtQy/firefox-60.0.2+build1/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 22
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x15007F,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1534237766219	addons.manager	ERROR	Failure during AddonRepository shutdown: Error: The object has been already finalized. (resource://gre/modules/DeferredTask.jsm:242:13) JS Stack trace: finalize@DeferredTask.jsm:242:13
+shutdown@AddonRepository.jsm:875:19
+shutdown@AddonRepository.jsm:323:12
+shutdownManager@AddonManager.jsm:1125:13
+observe@AsyncShutdown.jsm:541:9
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  AddonManager: shutting down.
+          Phase: profile-before-change
+          State: [{"name":"AddonRepository: async shutdown","state":"in progress"}]
+WARNING: Error: The object has been already finalized.
+WARNING: finalize@resource://gre/modules/DeferredTask.jsm:242:13
+shutdown@resource://gre/modules/addons/AddonRepository.jsm:875:19
+shutdown@resource://gre/modules/addons/AddonRepository.jsm:323:12
+shutdownManager@resource://gre/modules/AddonManager.jsm:1125:13
+observe@resource://gre/modules/AsyncShutdown.jsm:541:9
+
+JavaScript error: resource://gre/modules/DeferredTask.jsm, line 242: Error: The object has been already finalized.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

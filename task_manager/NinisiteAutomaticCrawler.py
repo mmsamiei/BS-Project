@@ -10,9 +10,9 @@ class NinisiteAutomaticCrawler(MyPeriodic):
     
     def foo2(self):
         #os.system("scrapy crawl shortTerm")
-        print("\t \t \t *** NINISITE")
+        print("\t \t \t *** START NINISITE ***")
         os.system("python3 ninisite_script_wraper.py")
-        print("finish crawl ninisite")
+        print("\t \t \t *** FINISH NINISITE ***")
 
 if __name__ == "__main__":
     my_crawler = NinisiteAutomaticCrawler(30)

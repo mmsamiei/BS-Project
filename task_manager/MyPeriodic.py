@@ -18,16 +18,27 @@ class MyPeriodic():
         print(datetime.datetime.now())
         self.i = self.i + 1
         self.foo2()
-        print("finish foo2")
         self.t = threading.Timer(self.interval, self.foo)
         self.t.start()
     
     def change_interval(self, new_interval):
+        self.t.cancel()
         self.interval = new_interval
+        self.t = threading.Timer(self.interval, self.foo)
+        self.t.start()
+
+    def turn_off(self):
+        self.t.cancel()
+        self.shutdown()
+        
+    def shutdown(self):
+        pass
 
     def foo2(self):
         global i
         print("Runned!" + str(i))
+
+    
 
 
 if __name__ == "__main__":

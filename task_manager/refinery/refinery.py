@@ -59,7 +59,6 @@ class Refinery:
         text_list = [mazm.spell_correction(word) for word in new_text_words]
         text_list = [mazm.my_lemmatizer(word) for word in text_list]
         text_list = [word for word in text_list if word not in self.stop_words]
-        print(text_list)
         return (" ".join(text_list))
                 
 if __name__ == "__main__":

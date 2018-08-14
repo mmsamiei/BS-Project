@@ -1,8 +1,9 @@
 import time, threading
+import datetime
 import os
 from MyPeriodic import MyPeriodic
-import sys
-class ApplyabroadAutomaticCrawler(MyPeriodic):
+
+class Test(MyPeriodic):
 
     def __init__(self, interval):
         MyPeriodic.__init__(self, interval)
@@ -10,10 +11,14 @@ class ApplyabroadAutomaticCrawler(MyPeriodic):
     
     def foo2(self):
         #os.system("scrapy crawl applyabroadSpider")
-        print("\t \t \t *** START APPLYABROAD ***")
-        os.system("python3 applyabroad_script_wraper.py")
-        print("\t \t \t *** FINISH CRAWL APPLYABROAD ***")
+        print(datetime.datetime.now())
 
 if __name__ == "__main__":
-    my_crawler = ApplyabroadAutomaticCrawler(30)
+    my_crawler = Test(1)
     my_crawler.start()
+    time.sleep(10)
+    my_crawler.turn_off()
+    time.sleep(10)
+    my_crawler.start()
+    time.sleep(10)
+    my_crawler.change_interval(2)
