@@ -1,6 +1,0 @@
-﻿  Source.cpp
-c:\users\mmsamiei\source\repos\project1\project1\source.cpp(243): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\mmsamiei\source\repos\project1\project1\source.cpp(246): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\mmsamiei\source\repos\project1\project1\source.cpp(249): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-c:\users\mmsamiei\source\repos\project1\project1\source.cpp(252): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
-  Project1.vcxproj -> C:\Users\mmsamiei\source\repos\Project1\Debug\Project1.exe
