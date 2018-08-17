@@ -19,6 +19,7 @@ class MyPeriodic():
         self.i = self.i + 1
         self.foo2()
         self.t = threading.Timer(self.interval, self.foo)
+        self.t.setDaemon(True)
         self.t.start()
     
     def change_interval(self, new_interval):
