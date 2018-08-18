@@ -78,6 +78,8 @@ class BM25:
         else:
             nq = 0
         idf_result = math.log((N-nq+0.5)/(nq+0.5))
+        if idf_result < 0:
+            idf_result = 0
         return idf_result
 
     def merge_scores(self, main_scores, temp_scores):
