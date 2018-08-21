@@ -56,11 +56,13 @@ class BM25:
         #for val in sorted_by_value:
         #    print(val)
         results = list()
-        for post in sorted_by_value:
+        for post in sorted_by_value[:100]:
+            print("1")
             temp = self.documents_collection.find_one({'_id':post[0]})
+            temp2 = self.db[temp['source']].find_one({'url':temp['url']})
             new_result = {
-                'title' : temp['title'],
-                'body' : temp['body'],
+                'title' : temp2['title'],
+                'body' : temp2['body'],
                 'url' : temp['url']
             }
             results.append(new_result)
