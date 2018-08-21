@@ -9,22 +9,13 @@ class TaskManager():
 
     def __init__(self):
         self.lock = False
-        self.apply_abroad_automaticCrawler = ApplyabroadAutomaticCrawler.ApplyabroadAutomaticCrawler(60*60)
+        self.apply_abroad_automaticCrawler = ApplyabroadAutomaticCrawler.ApplyabroadAutomaticCrawler(2*60*60)
         self.ninisite_automatic_crawler = NinisiteAutomaticCrawler.NinisiteAutomaticCrawler(60*60)
-        self.javabyab_automatic_crawler = JavabyabAutomaticCrawler.JavabyabAutomaticCrawler(60*60)
-        self.porsak_automatic_crawler = PorsakAutomaticCrawler.PorsakAutomaticCrawler(60*60)
-        self.tebyan_automatic_crawler = TebyanAutomaticCrawler.TebyanAutomaticCrawler(60*60)
-        self.automatic_inverted_index = AutomaticInvertedIndex.AutomaticInvertedIndex(120)
-        self.automatic_refinement = AutomaticRefinement.AutomaticRefinement(60)
-
-    def start(self):
-        self.apply_abroad_automaticCrawler.start()
-        self.ninisite_automatic_crawler.start()
-        self.javabyab_automatic_crawler.start()
-        self.porsak_automatic_crawler.start()
-        self.tebyan_automatic_crawler.start()
-        self.automatic_inverted_index.start()
-        self.automatic_refinement.start()
+        self.javabyab_automatic_crawler = JavabyabAutomaticCrawler.JavabyabAutomaticCrawler(3*60*60)
+        self.porsak_automatic_crawler = PorsakAutomaticCrawler.PorsakAutomaticCrawler(4*60*60)
+        self.tebyan_automatic_crawler = TebyanAutomaticCrawler.TebyanAutomaticCrawler(3*60*60)
+        self.automatic_inverted_index = AutomaticInvertedIndex.AutomaticInvertedIndex(300)
+        self.automatic_refinement = AutomaticRefinement.AutomaticRefinement(30)
 
     def turn_off_all(self):
         self.apply_abroad_automaticCrawler.turn_off()

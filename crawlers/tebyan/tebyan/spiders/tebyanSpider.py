@@ -7,6 +7,7 @@ import re
 from selenium import webdriver
 import os
 from scrapy.selector import Selector
+from pyvirtualdisplay import Display
 
 class TebyanspiderSpider(scrapy.Spider):
     name = 'tebyanSpider'
@@ -34,10 +35,12 @@ class TebyanspiderSpider(scrapy.Spider):
 
 
     def questions_page(self, response):
-        driver = webdriver.Firefox(executable_path='/home/mahdi/Public/BS_Project/crawlers/geckodriver')
+        display = Display(visible=0, size=(1024, 768))
+        display.start()
+        driver = webdriver.Firefox(executable_path='/root/mahdi/BS-Project/crawlers/geckodriver')
         try:
             driver.get(response.request.url)
-            for i in range(0,10):
+            for i in range(0,3):
                 driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
             sel = Selector(text = driver.page_source)
             questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()
@@ -55,6 +58,7 @@ class TebyanspiderSpider(scrapy.Spider):
         except:
             pass
         driver.quit()
+        display.stop()
             
 
 

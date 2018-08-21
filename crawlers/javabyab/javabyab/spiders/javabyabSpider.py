@@ -27,7 +27,10 @@ class JavabyabspiderSpider(scrapy.Spider):
         questions_links = response.xpath('//*[contains(@class, "qa-q-item-title")]//@href').extract()
         for question_link in questions_links:
             question_absolute_link = response.urljoin(question_link)
-            yield scrapy.Request(url=question_absolute_link, callback=self.question_page)
+            if self.collection.find_one({'url':question_absolute_link}) is None:
+                yield scrapy.Request(url=question_absolute_link, callback=self.question_page)
+            else:
+                return
         next_page_link = response.xpath('//*[contains(@class, "qa-page-next")]/@href').extract_first()
         if next_page_link is not None:
             next_page_absolute_link = response.urljoin(next_page_link)

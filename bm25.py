@@ -2,6 +2,8 @@ import sys
 from task_manager.refinery.mazm import Mazm as mazm
 from pymongo import MongoClient
 import math
+import hazm as hazm
+from PersianStemmer import PersianStemmer
 
 class BM25:
     mongo_server = 'localhost'
@@ -31,19 +33,28 @@ class BM25:
         temp = stop_word_file.read().splitlines() 
         for line in temp:
             self.stop_words.add(line)
+        self.ps = PersianStemmer()
+        self.lemma = hazm.Lemmatizer()
 
     def search(self, query):
         new_query = mazm.my_normalizer(query)
         new_query_words = mazm.my_word_tokenizer(new_query)
-        query_word_list = [mazm.spell_correction(word) for word in new_query_words]
-        query_word_list = [mazm.my_lemmatizer(word) for word in query_word_list]
+        query_word_list = [word for word in new_query_words if word not in self.stop_words]
+        query_word_list = [self.ps.run(word) for word in query_word_list]
+        query_word_list = [self.lemma.lemmatize(word) for word in query_word_list]
         query_word_list = [word for word in query_word_list if word not in self.stop_words]
+        #query_word_list = [mazm.spell_correction(word) for word in new_query_words]
+        #query_word_list = [mazm.my_lemmatizer(word) for word in query_word_list]
+        #query_word_list = [word for word in query_word_list if word not in self.stop_words]
         scores = {}
         for q in query_word_list:
-            print(q)
             temp_scores = self.get_scores(q)
             scores = self.merge_scores(scores, temp_scores)
         sorted_by_value = sorted(scores.items(), key=lambda kv: -1*kv[1])
+        print(len(scores))
+        print(len(sorted_by_value))
+        #for val in sorted_by_value:
+        #    print(val)
         results = list()
         for post in sorted_by_value:
             temp = self.documents_collection.find_one({'_id':post[0]})
@@ -53,7 +64,6 @@ class BM25:
                 'url' : temp['url']
             }
             results.append(new_result)
-        print(results)
         return results
 
     def get_scores(self, word):
@@ -88,7 +98,7 @@ class BM25:
             else:
                 result[key] = main_scores[key]
         for key in temp_scores:
-            if key not in main_scores:
+            if key not in result:
                 result[key] = temp_scores[key]
         return result
 
@@ -106,5 +116,5 @@ class BM25:
 
 if __name__ == "__main__":
     bm25 = BM25()
-    bm25.search("ما با ماجراهای متنوعی مواجه شدیم")
+    bm25.search(" چگونه خورشت قیمه بادنجان درست کنم  ")
     

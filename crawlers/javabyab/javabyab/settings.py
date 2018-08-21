@@ -96,3 +96,5 @@ MONGODB_COLLECTION = 'javabyab'
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 FEED_EXPORT_ENCODING = 'utf-8'
+LOG_LEVEL = 'WARNING'
+

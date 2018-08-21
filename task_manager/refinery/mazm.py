@@ -41,18 +41,19 @@ class Mazm:
     
     def my_lemmatizer(string):
         ps = PersianStemmer()
-        lemmatizer = hazm.Lemmatizer()
+        #lemmatizer = hazm.Lemmatizer()
         current = ps.run(string)
-        current = lemmatizer.lemmatize(string)
+        #current = lemmatizer.lemmatize(string)
         # new = stemmer.stem(current)
         # while(current != new):
         #     current = new
         #     new = stemmer.stem(current)
         # result = new
-        if("#" in current): # return bone mozareh!!
-            result = current.split("#")[1]
-        else:
-            result = current
+        result = current
+        #if("#" in current): # return bone mozareh!!
+        #    result = current.split("#")[1]
+        #else:
+        #    result = current
         return result
 
 

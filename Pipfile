@@ -10,6 +10,7 @@ pymongo = "*"
 persianstemmer = "*"
 selenium = "*"
 flask = "*"
+pyvirtualdisplay = "*"
 
 [dev-packages]
 

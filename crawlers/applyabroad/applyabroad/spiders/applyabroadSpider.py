@@ -33,7 +33,10 @@ class ApplyabroadspiderSpider(scrapy.Spider):
                 break
 
     def post_page(self, response):
-        post_body = ' '.join(response.xpath('//div[@class="posttext"]')[0].xpath('./text()').extract())
+        try:
+            post_body = ' '.join(response.xpath('//div[@class="posttext"]')[0].xpath('./text()').extract())
+        except IndexError as error:
+            post_body = ' '
         post_title = response.xpath('//p[@class="largefont"]/a/text()').extract_first()
         post_url = response.request.url
         yield{

@@ -3,6 +3,7 @@ import pprint
 import hazm as hazm
 import sys
 from refinery.mazm import Mazm as mazm
+from PersianStemmer import PersianStemmer
 import os
 
 class Refinery:
@@ -10,7 +11,8 @@ class Refinery:
     mongo_server = 'localhost'
     mongo_port = 27017
     mongo_database = 'scraping'
-    collections_name = ['applyabroad','javabyab','ninisite','porsak','tebyan']
+    collections_name = ['porsak','ninisite','applyabroad','javabyab','tebyan']
+    #collections_name = ['ninisite']
     destination_collection_name = 'refined'
     
     def __init__(self):
@@ -50,14 +52,21 @@ class Refinery:
 
     def insert_post(self, post):
         refined_posts = self.db[self.destination_collection_name]
-        post_id = refined_posts.insert_one(post).inserted_id
+        #post_id = refined_posts.insert_one(post).inserted_id
+        post_id = refined_posts.update({'url':post['url']},post,upsert = True)
         return post_id
 
     def refine_text(self, text):
+        ps = PersianStemmer()
+        lemma = hazm.Lemmatizer()
         new_text = mazm.my_normalizer(text)
         new_text_words = mazm.my_word_tokenizer(new_text)
-        text_list = [mazm.spell_correction(word) for word in new_text_words]
-        text_list = [mazm.my_lemmatizer(word) for word in text_list]
+        text_list = new_text_words
+        text_list = [word for word in text_list if word not in self.stop_words]
+        #text_list = [mazm.spell_correction(word) for word in new_text_words]
+        #text_list = [mazm.my_lemmatizer(word) for word in text_list]
+        text_list = [ps.run(word) for word in text_list]
+        text_list = [lemma.lemmatize(word) for word in text_list]
         text_list = [word for word in text_list if word not in self.stop_words]
         return (" ".join(text_list))
                 

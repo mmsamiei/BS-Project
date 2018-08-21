@@ -15,5 +15,8 @@ class TebyanPipeline(object):
         self.collection = db[settings['MONGODB_COLLECTION']]
 
     def process_item(self, item, spider):
-        self.collection.update({'url':dict(item)['url']},dict(item),upsert = True)
+        temp = self.collection.find_one({'url':dict(item)['url']})
+        if temp is None:
+            self.collection.insert(dict(item))
+        #self.collection.update({'url':dict(item)['url']},dict(item),upsert = True)
         return item

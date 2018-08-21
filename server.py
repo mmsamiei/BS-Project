@@ -20,8 +20,8 @@ def idf():
 def search():
     word = request.args.get('q')
     bm25 = BM25()
-    results = bm25.search(word)
+    results = bm25.search(word)[:100]
     return jsonify(results)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
