@@ -44,6 +44,7 @@ class Refinery:
             collection.update_one({'_id': post['_id']}, {'$set': {'checked': True}})
 
     def refine_post(self, post, source_collection):
+        print("start refine"+str(post['url']))
         new_title = self.refine_text(mazm.my_normalizer(post['title']))
         new_body = self.refine_text(mazm.my_normalizer(post['body']))
         url = post['url']

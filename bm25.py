@@ -4,6 +4,7 @@ from pymongo import MongoClient
 import math
 import hazm as hazm
 from PersianStemmer import PersianStemmer
+import datetime
 
 class BM25:
     mongo_server = 'localhost'
@@ -37,27 +38,30 @@ class BM25:
         self.lemma = hazm.Lemmatizer()
 
     def search(self, query):
+        print("1: "+str(datetime.datetime.now()))
         new_query = mazm.my_normalizer(query)
         new_query_words = mazm.my_word_tokenizer(new_query)
         query_word_list = [word for word in new_query_words if word not in self.stop_words]
         query_word_list = [self.ps.run(word) for word in query_word_list]
         query_word_list = [self.lemma.lemmatize(word) for word in query_word_list]
         query_word_list = [word for word in query_word_list if word not in self.stop_words]
+        print("2: "+str(datetime.datetime.now()))
         #query_word_list = [mazm.spell_correction(word) for word in new_query_words]
         #query_word_list = [mazm.my_lemmatizer(word) for word in query_word_list]
         #query_word_list = [word for word in query_word_list if word not in self.stop_words]
         scores = {}
         for q in query_word_list:
+            print("2.1: "+str(datetime.datetime.now()) + " " + str(q))
             temp_scores = self.get_scores(q)
+            print("2.2: "+str(datetime.datetime.now()) + " " + str(q))
             scores = self.merge_scores(scores, temp_scores)
+        print("3: "+str(datetime.datetime.now()))
         sorted_by_value = sorted(scores.items(), key=lambda kv: -1*kv[1])
-        print(len(scores))
-        print(len(sorted_by_value))
+        print("4: "+str(datetime.datetime.now()))
         #for val in sorted_by_value:
         #    print(val)
         results = list()
         for post in sorted_by_value[:100]:
-            print("1")
             temp = self.documents_collection.find_one({'_id':post[0]})
             temp2 = self.db[temp['source']].find_one({'url':temp['url']})
             new_result = {
@@ -66,6 +70,7 @@ class BM25:
                 'url' : temp['url']
             }
             results.append(new_result)
+        print("5: "+str(datetime.datetime.now()))
         return results
 
     def get_scores(self, word):
@@ -73,13 +78,14 @@ class BM25:
         temp = self.iverted_index_collection.find_one({"word":word})
         if temp is not None:    
             documents = temp['documents']
+            word_idf = self.idf(word)
             for document in documents:
                 doc_id = document['id']
                 freq = document['num'] 
                 document_len = self.get_doc_len(document['id'])
                 avgdl = self.avg_dl
-                score = (self.idf(word) * freq *  (BM25.K1 + 1)) / (freq + BM25.K1 * ( 1 - BM25.B + BM25.B * (document_len / avgdl)))
-                result[doc_id] = score;
+                score = (word_idf * freq *  (BM25.K1 + 1)) / (freq + BM25.K1 * ( 1 - BM25.B + BM25.B * (document_len / avgdl)))
+                result[doc_id] = score
         return result
     
     def idf(self, word):
