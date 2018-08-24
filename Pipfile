@@ -11,6 +11,7 @@ persianstemmer = "*"
 selenium = "*"
 flask = "*"
 pyvirtualdisplay = "*"
+nltk = "*"
 
 [dev-packages]
 

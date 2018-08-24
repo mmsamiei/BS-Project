@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from bm25 import BM25
 from flask import jsonify, request
 app = Flask(__name__)
@@ -21,7 +21,12 @@ def search():
     word = request.args.get('q')
     bm25 = BM25()
     results = bm25.search(word)[:100]
-    return jsonify(results)
+    return render_template('results.html', results = results)
+    #return jsonify(results)
+
+@app.route('/home', methods=['GET'])
+def home():
+    return render_template('./home.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
