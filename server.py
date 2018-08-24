@@ -21,7 +21,10 @@ def search():
     word = request.args.get('q')
     bm25 = BM25()
     results = bm25.search(word)[:100]
-    return render_template('results.html', results = results)
+    if len(results) == 0:
+        return render_template('no-result.html')
+    else: 
+        return render_template('results.html', results = results)
     #return jsonify(results)
 
 @app.route('/home', methods=['GET'])
