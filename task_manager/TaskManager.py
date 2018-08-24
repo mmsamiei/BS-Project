@@ -14,7 +14,7 @@ class TaskManager():
         self.javabyab_automatic_crawler = JavabyabAutomaticCrawler.JavabyabAutomaticCrawler(60*60)
         self.porsak_automatic_crawler = PorsakAutomaticCrawler.PorsakAutomaticCrawler(60*60)
         self.tebyan_automatic_crawler = TebyanAutomaticCrawler.TebyanAutomaticCrawler(60*60)
-        self.automatic_inverted_index = AutomaticInvertedIndex.AutomaticInvertedIndex(120)
+        self.automatic_inverted_index = AutomaticInvertedIndex.AutomaticInvertedIndex(300)
         self.automatic_refinement = AutomaticRefinement.AutomaticRefinement(60)
 
     def start(self):
@@ -41,7 +41,7 @@ class TaskManager():
         self.ninisite_automatic_crawler.start()
         self.javabyab_automatic_crawler.start()
         self.porsak_automatic_crawler.start()
-        self.tebyan_automatic_crawler.start()
+        #self.tebyan_automatic_crawler.start()
         self.automatic_inverted_index.start()
         self.automatic_refinement.start()
         print("now start all")

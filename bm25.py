@@ -104,6 +104,8 @@ class BM25:
 
     def get_doc_len(self, object_id):
         temp = self.documents_collection.find_one({"_id":object_id})
+        print("******************************")
+        print(object_id)
         return len(temp['title'].split()) + len(temp['body'].split())
 
 if __name__ == "__main__":
