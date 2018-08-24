@@ -5,6 +5,8 @@ import re
 class Mazm:
 
     def my_normalizer(string):
+        if string is None:
+            return ''
         normalizer = hazm.Normalizer()
         result = normalizer.normalize(string)
         result = Mazm.remove_duplicate_consecutive(result)
