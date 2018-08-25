@@ -28,6 +28,8 @@ class TebyanspiderSpider(scrapy.Spider):
             'https://www.tebyan.net/newindex.aspx?pid=851&GroupParentID=387',
             'https://moshavere.tebyan.net/newindex.aspx?pid=851&GroupParentID=1136'
         ]
+
+
         for url in urls:
             #self.driver.get(url)
             yield scrapy.Request(url=url, callback=self.questions_page)
@@ -37,11 +39,32 @@ class TebyanspiderSpider(scrapy.Spider):
     def questions_page(self, response):
         display = Display(visible=0, size=(1024, 768))
         display.start()
-        driver = webdriver.Firefox(executable_path='/root/mahdi/BS-Project/crawlers/geckodriver')
+        derive_path = '/root/mahdi/BS-Project/crawlers/geckodriver'
+        #derive_path = '/home/mahdi/Public/Zirab/BS-Project/crawlers/geckodriver'
+        driver = webdriver.Firefox(executable_path=derive_path)
         try:
             driver.get(response.request.url)
-            for i in range(0,3):
+            sel = Selector(text = driver.page_source)
+            last_question_link = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()[-1]
+            last_question_link = response.urljoin(last_question_link)
+            repetition = False
+            temp = self.collection.find_one({'url':last_question_link})
+            if temp is not None:
+                repetition = True
+            i = 0 
+            previous_question_link = last_question_link
+            while(repetition is False):
                 driver.find_element_by_xpath('//div[@id="__ConsultaionMore__"]').click()
+                sel = Selector(text = driver.page_source)
+                last_question_link = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()[-1]
+                last_question_link = response.urljoin(last_question_link)
+                temp = self.collection.find_one({'url':last_question_link})
+                if temp is not None or previous_question_link == last_question_link:
+                    repetition = True
+                i = i + 1
+                print(last_question_link+" \t " + str(i))
+                previous_question_link = last_question_link
+            
             sel = Selector(text = driver.page_source)
             questions_links = sel.xpath('//*[contains(@class, "ConsultationQuestion")]//@href').extract()
             questions_bodies = sel.xpath('//*[contains(@class, "ConsultationQuestion")]/a/text()').extract()
