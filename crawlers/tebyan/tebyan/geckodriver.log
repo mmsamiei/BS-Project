@@ -1,0 +1,153 @@
+1535236155719	geckodriver	INFO	geckodriver 0.21.0
+1535236155726	geckodriver	INFO	Listening on 127.0.0.1:52771
+1535236156729	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8xmg4qDIeQEF"
+
+(firefox:4972): Gtk-WARNING **: 22:29:16.782: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:5031): Gtk-WARNING **: 22:29:19.120: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236160346	Marionette	INFO	Listening on port 37823
+1535236160368	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5072): Gtk-WARNING **: 22:29:20.963: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236171328	geckodriver	INFO	geckodriver 0.21.0
+1535236171336	geckodriver	INFO	Listening on 127.0.0.1:58953
+1535236172335	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.psUkD16Pxm80"
+
+(firefox:5118): Gtk-WARNING **: 22:29:32.373: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:5180): Gtk-WARNING **: 22:29:34.767: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236176258	Marionette	INFO	Listening on port 43181
+1535236176393	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5218): Gtk-WARNING **: 22:29:36.648: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236187561	geckodriver	INFO	geckodriver 0.21.0
+1535236187568	geckodriver	INFO	Listening on 127.0.0.1:55573
+1535236188569	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zQP3BmEgnEJR"
+
+(firefox:5269): Gtk-WARNING **: 22:29:48.612: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:5362): Gtk-WARNING **: 22:29:50.928: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236192181	Marionette	INFO	Listening on port 41651
+1535236192329	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5410): Gtk-WARNING **: 22:29:52.788: Locale not supported by C library.
+	Using the fallback 'C' locale.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535236203708	geckodriver	INFO	geckodriver 0.21.0
+1535236203714	geckodriver	INFO	Listening on 127.0.0.1:57135
+1535236204716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kJrxO1JVnEjG"
+
+(firefox:5472): Gtk-WARNING **: 22:30:04.754: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:5566): Gtk-WARNING **: 22:30:06.961: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236208185	Marionette	INFO	Listening on port 36789
+1535236208255	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5598): Gtk-WARNING **: 22:30:08.761: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Gdk-Message: 22:30:25.369: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+Gdk-Message: 22:30:25.393: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1013.
+
+Gdk-Message: 22:30:25.393: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1013.
+
+Sandbox: Unexpected EOF, op 2 flags 00 path /etc/localtime
+Gdk-Message: 22:30:25.373: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1009.
+
+Sandbox: Unexpected EOF, op 2 flags 00 path /etc/localtime
+Gdk-Message: 22:30:25.392: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
+1535236282894	geckodriver	INFO	geckodriver 0.21.0
+1535236282902	geckodriver	INFO	Listening on 127.0.0.1:37717
+1535236283903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8blY6g7wSMdL"
+
+(firefox:5660): Gtk-WARNING **: 22:31:23.949: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:5743): Gtk-WARNING **: 22:31:26.204: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236287420	Marionette	INFO	Listening on port 35593
+1535236287536	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5776): Gtk-WARNING **: 22:31:27.729: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Sandbox: Unexpected EOF, op 2 flags 00 path /etc/localtime
+Gdk-Message: 22:31:30.813: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+
+1535236291003	geckodriver	INFO	geckodriver 0.21.0
+1535236291019	geckodriver	INFO	Listening on 127.0.0.1:45367
+1535236292140	geckodriver	INFO	geckodriver 0.21.0
+1535236292146	geckodriver	INFO	Listening on 127.0.0.1:48081
+1535236293153	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LgCWzogmJ9Ia"
+
+(firefox:5842): Gtk-WARNING **: 22:31:33.199: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+Error: cannot open display: :1005
+1535236293395	geckodriver	INFO	geckodriver 0.21.0
+1535236293402	geckodriver	INFO	Listening on 127.0.0.1:38905
+1535236294403	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dxBwt8syZUOE"
+
+(firefox:5860): Gtk-WARNING **: 22:31:34.430: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Unable to init server: Could not connect: Connection refused
+Error: cannot open display: :1007
+1535236335670	geckodriver	INFO	geckodriver 0.21.0
+1535236335678	geckodriver	INFO	Listening on 127.0.0.1:53709
+1535236336680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Uuq7xp8kCZyr"
+
+(firefox:5891): Gtk-WARNING **: 22:32:16.728: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:5979): Gtk-WARNING **: 22:32:19.048: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:6017): Gtk-WARNING **: 22:32:20.472: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236340624	Marionette	INFO	Listening on port 38007
+1535236340756	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535236347149	geckodriver	INFO	geckodriver 0.21.0
+1535236347157	geckodriver	INFO	Listening on 127.0.0.1:51781
+1535236348158	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AvmI2kcw2O6c"
+
+(firefox:6068): Gtk-WARNING **: 22:32:28.202: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:6154): Gtk-WARNING **: 22:32:30.612: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236351943	Marionette	INFO	Listening on port 36705
+1535236352015	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:6207): Gtk-WARNING **: 22:32:32.472: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236366237	geckodriver	INFO	geckodriver 0.21.0
+1535236366245	geckodriver	INFO	Listening on 127.0.0.1:52027
+1535236367245	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XeRfj2jTceyO"
+
+(firefox:6258): Gtk-WARNING **: 22:32:47.288: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:6316): Gtk-WARNING **: 22:32:49.598: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535236370917	Marionette	INFO	Listening on port 44513
+1535236370990	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:6351): Gtk-WARNING **: 22:32:51.522: Locale not supported by C library.
+	Using the fallback 'C' locale.
+Gdk-Message: 22:32:57.199: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1009.
+
+Gdk-Message: 22:32:57.208: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1009.
+
+Sandbox: Unexpected EOF, op 2 flags 00 path /etc/localtime
+Gdk-Message: 22:32:57.196: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+

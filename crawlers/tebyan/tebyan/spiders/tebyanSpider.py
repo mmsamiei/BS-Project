@@ -62,7 +62,7 @@ class TebyanspiderSpider(scrapy.Spider):
                 if temp is not None or previous_question_link == last_question_link:
                     repetition = True
                 i = i + 1
-                print(last_question_link+" \t " + str(i))
+                #print(last_question_link+" \t " + str(i))
                 previous_question_link = last_question_link
             
             sel = Selector(text = driver.page_source)
