@@ -3393,3 +3393,55 @@ JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 408
 [Parent 15684, Gecko_IOThread] WARNING: pipe error (62): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
 [Parent 15524, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535233708514	geckodriver	INFO	geckodriver 0.21.0
+1535233708597	geckodriver	INFO	Listening on 127.0.0.1:37615
+1535233710432	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7JmNgE87UUsp"
+1535233717417	Marionette	INFO	Listening on port 44583
+1535233718213	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535233744068	geckodriver	INFO	geckodriver 0.21.0
+1535233744077	geckodriver	INFO	Listening on 127.0.0.1:35613
+1535233781162	geckodriver	INFO	geckodriver 0.21.0
+1535233781170	geckodriver	INFO	Listening on 127.0.0.1:35697
+1535233783170	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JKdKkerRF5BE"
+1535233786510	Marionette	INFO	Listening on port 34239
+1535233786579	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535233809379	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535233810628	geckodriver	INFO	geckodriver 0.21.0
+1535233810632	geckodriver	INFO	Listening on 127.0.0.1:53245
+1535233812639	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dqZp4l4Crc03"
+1535233816348	Marionette	INFO	Listening on port 34181
+1535233816449	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535233851048	geckodriver	INFO	geckodriver 0.21.0
+1535233851055	geckodriver	INFO	Listening on 127.0.0.1:40413
+1535233853175	geckodriver	INFO	geckodriver 0.21.0
+1535233853182	geckodriver	INFO	Listening on 127.0.0.1:54731
+1535233855186	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cjvITqfHuRBP"
+Unable to init server: Could not connect: Connection refused
+Error: cannot open display: :1048
+1535234179124	geckodriver	INFO	geckodriver 0.21.0
+1535234179130	geckodriver	INFO	Listening on 127.0.0.1:46007
+1535234181130	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.no4mfiWAvqWN"
+1535234184378	Marionette	INFO	Listening on port 35349
+1535234184460	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535234249173	geckodriver	INFO	geckodriver 0.21.0
+1535234249181	geckodriver	INFO	Listening on 127.0.0.1:44043
+1535234367870	geckodriver	INFO	geckodriver 0.21.0
+1535234367877	geckodriver	INFO	Listening on 127.0.0.1:42035
+1535234369878	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HICO29mJ9B5d"
+1535234373224	Marionette	INFO	Listening on port 39653
+1535234373286	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535235091836	geckodriver	INFO	geckodriver 0.21.0
+1535235091845	geckodriver	INFO	Listening on 127.0.0.1:47047
+1535235093842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.rb1D0csllczN"
+1535235097639	Marionette	INFO	Listening on port 43769
+1535235097651	Marionette	WARN	TLS certificate errors will be ignored for this session
+Gdk-Message: 02:42:29.241: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1044.
+
+1535235262757	geckodriver	INFO	geckodriver 0.21.0
+1535235262765	geckodriver	INFO	Listening on 127.0.0.1:36467
+1535235264771	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IUbuCLfLfTND"
+1535235268174	Marionette	INFO	Listening on port 43647
+1535235268181	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535235294770	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
