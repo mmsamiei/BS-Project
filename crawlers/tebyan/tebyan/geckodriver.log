@@ -3393,3 +3393,803 @@ JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 408
 [Parent 15684, Gecko_IOThread] WARNING: pipe error (62): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
 [Parent 15524, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535105323002	geckodriver	INFO	geckodriver 0.21.0
+1535105323033	geckodriver	INFO	Listening on 127.0.0.1:56513
+1535105324007	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.g5M9SIgpIBCe"
+
+(firefox:16716): Gtk-WARNING **: 10:08:44.139: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:16792): Gtk-WARNING **: 10:08:50.703: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:16835): Gtk-WARNING **: 10:08:54.599: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535105334851	Marionette	INFO	Listening on port 43177
+1535105334981	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535105347435	geckodriver	INFO	geckodriver 0.21.0
+1535105347459	geckodriver	INFO	Listening on 127.0.0.1:45211
+1535105348443	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MnYOhnxlGNmS"
+
+(firefox:16883): Gtk-WARNING **: 10:09:08.555: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:16959): Gtk-WARNING **: 10:09:14.316: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:17034): Gtk-WARNING **: 10:09:17.608: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535105358936	Marionette	INFO	Listening on port 37223
+1535105359005	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535105369093	geckodriver	INFO	geckodriver 0.21.0
+1535105369152	geckodriver	INFO	Listening on 127.0.0.1:45855
+1535105370111	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eDVImCFy7tnh"
+
+(firefox:17087): Gtk-WARNING **: 10:09:30.202: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:17208): Gtk-WARNING **: 10:09:37.116: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:17250): Gtk-WARNING **: 10:09:39.717: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535105380933	Marionette	INFO	Listening on port 38671
+1535105381133	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535105390431	geckodriver	INFO	geckodriver 0.21.0
+1535105390451	geckodriver	INFO	Listening on 127.0.0.1:60981
+1535105391451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sQRVeD3VfBKO"
+
+(firefox:17305): Gtk-WARNING **: 10:09:51.643: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:17377): Gtk-WARNING **: 10:09:57.082: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:17422): Gtk-WARNING **: 10:10:00.388: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535105400658	Marionette	INFO	Listening on port 40245
+1535105400743	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535116223961	geckodriver	INFO	geckodriver 0.21.0
+1535116223979	geckodriver	INFO	Listening on 127.0.0.1:58671
+1535116224966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.PevCW1VuBNOK"
+
+(firefox:17948): Gtk-WARNING **: 13:10:25.070: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18006): Gtk-WARNING **: 13:10:30.352: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18057): Gtk-WARNING **: 13:10:32.747: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535116233879	Marionette	INFO	Listening on port 40751
+1535116233950	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535116243704	geckodriver	INFO	geckodriver 0.21.0
+1535116243741	geckodriver	INFO	Listening on 127.0.0.1:47975
+1535116244716	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IRLBLFm9brSi"
+
+(firefox:18107): Gtk-WARNING **: 13:10:44.838: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18209): Gtk-WARNING **: 13:10:49.625: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18250): Gtk-WARNING **: 13:10:52.144: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535116252468	Marionette	INFO	Listening on port 38075
+1535116252683	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535116262671	geckodriver	INFO	geckodriver 0.21.0
+1535116262691	geckodriver	INFO	Listening on 127.0.0.1:58049
+1535116263679	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.u7GeSJnIHVmg"
+
+(firefox:18308): Gtk-WARNING **: 13:11:03.846: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18371): Gtk-WARNING **: 13:11:08.369: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18416): Gtk-WARNING **: 13:11:10.663: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535116270970	Marionette	INFO	Listening on port 34725
+1535116271132	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535116280051	geckodriver	INFO	geckodriver 0.21.0
+1535116280076	geckodriver	INFO	Listening on 127.0.0.1:43621
+1535116281059	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.imii2LnbjIuT"
+
+(firefox:18478): Gtk-WARNING **: 13:11:21.154: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18548): Gtk-WARNING **: 13:11:25.156: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:18589): Gtk-WARNING **: 13:11:27.309: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535116288502	Marionette	INFO	Listening on port 45487
+1535116288539	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 17948, Gecko_IOThread] WARNING: pipe error (68): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 18308, Gecko_IOThread] WARNING: pipe error (62): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 18107, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535127113457	geckodriver	INFO	geckodriver 0.21.0
+1535127113490	geckodriver	INFO	Listening on 127.0.0.1:42373
+1535127114462	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2AVS3XcuAl1w"
+
+(firefox:20469): Gtk-WARNING **: 16:11:54.580: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:20557): Gtk-WARNING **: 16:11:59.462: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:20597): Gtk-WARNING **: 16:12:01.906: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535127122427	Marionette	INFO	Listening on port 36415
+1535127122556	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535127129537	geckodriver	INFO	geckodriver 0.21.0
+1535127129575	geckodriver	INFO	Listening on 127.0.0.1:57793
+1535127130534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iPexf65EJmI6"
+
+(firefox:20646): Gtk-WARNING **: 16:12:10.655: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:20714): Gtk-WARNING **: 16:12:16.252: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:20755): Gtk-WARNING **: 16:12:18.890: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535127139319	Marionette	INFO	Listening on port 41351
+1535127139601	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535127150007	geckodriver	INFO	geckodriver 0.21.0
+1535127150038	geckodriver	INFO	Listening on 127.0.0.1:39001
+1535127151016	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cW3jfuPFjbl6"
+
+(firefox:20818): Gtk-WARNING **: 16:12:31.117: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:20879): Gtk-WARNING **: 16:12:35.657: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:20919): Gtk-WARNING **: 16:12:38.646: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535127158729	Marionette	INFO	Listening on port 45451
+1535127158855	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535127168633	geckodriver	INFO	geckodriver 0.21.0
+1535127168669	geckodriver	INFO	Listening on 127.0.0.1:36615
+1535127169643	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.y44BsAbO9cuC"
+
+(firefox:20976): Gtk-WARNING **: 16:12:49.817: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:21031): Gtk-WARNING **: 16:12:54.955: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:21077): Gtk-WARNING **: 16:12:57.928: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535127178166	Marionette	INFO	Listening on port 38847
+1535127178235	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 20646, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535137999797	geckodriver	INFO	geckodriver 0.21.0
+1535137999829	geckodriver	INFO	Listening on 127.0.0.1:57851
+1535138000800	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lyDW6UG1kvT9"
+
+(firefox:21651): Gtk-WARNING **: 19:13:20.975: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:21714): Gtk-WARNING **: 19:13:25.785: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:21758): Gtk-WARNING **: 19:13:28.145: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535138008964	Marionette	INFO	Listening on port 37189
+1535138008987	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535138019495	geckodriver	INFO	geckodriver 0.21.0
+1535138019513	geckodriver	INFO	Listening on 127.0.0.1:49857
+1535138020503	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kuMEfx1krnqJ"
+
+(firefox:21812): Gtk-WARNING **: 19:13:40.591: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:21869): Gtk-WARNING **: 19:13:44.348: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:21908): Gtk-WARNING **: 19:13:46.170: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535138026857	Marionette	INFO	Listening on port 38861
+1535138026960	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535138035980	geckodriver	INFO	geckodriver 0.21.0
+1535138035996	geckodriver	INFO	Listening on 127.0.0.1:51391
+1535138036987	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kji17RJPhq7N"
+
+(firefox:21967): Gtk-WARNING **: 19:13:57.070: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:22031): Gtk-WARNING **: 19:14:00.704: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:22061): Gtk-WARNING **: 19:14:02.147: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535138042814	Marionette	INFO	Listening on port 38967
+1535138042919	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535138051373	geckodriver	INFO	geckodriver 0.21.0
+1535138051389	geckodriver	INFO	Listening on 127.0.0.1:55789
+1535138052375	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RylyU91Qmb2S"
+
+(firefox:22135): Gtk-WARNING **: 19:14:12.454: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:22195): Gtk-WARNING **: 19:14:16.535: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:22239): Gtk-WARNING **: 19:14:18.713: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535138058912	Marionette	INFO	Listening on port 36135
+1535138058958	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 21812, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 21651, Gecko_IOThread] WARNING: pipe error (55): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 21967, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535142347771	geckodriver	INFO	geckodriver 0.21.0
+1535142347793	geckodriver	INFO	Listening on 127.0.0.1:56853
+1535142348781	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gKoAcKWiSH3c"
+
+(firefox:22998): Gtk-WARNING **: 20:25:48.961: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23087): Gtk-WARNING **: 20:25:55.628: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23153): Gtk-WARNING **: 20:25:59.825: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535142360024	Marionette	INFO	Listening on port 35773
+1535142360130	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535142374819	geckodriver	INFO	geckodriver 0.21.0
+1535142374863	geckodriver	INFO	Listening on 127.0.0.1:45231
+1535142375824	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SIljlXdlHSXQ"
+
+(firefox:23204): Gtk-WARNING **: 20:26:16.075: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23285): Gtk-WARNING **: 20:26:24.581: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23331): Gtk-WARNING **: 20:26:29.789: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535142390161	Marionette	INFO	Listening on port 44067
+1535142390314	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535142401387	geckodriver	INFO	geckodriver 0.21.0
+1535142401522	geckodriver	INFO	Listening on 127.0.0.1:59011
+1535142402400	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NuVVizlMxREI"
+
+(firefox:23373): Gtk-WARNING **: 20:26:42.493: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23466): Gtk-WARNING **: 20:26:47.466: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23515): Gtk-WARNING **: 20:26:50.945: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535142411298	Marionette	INFO	Listening on port 34439
+1535142411408	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535142418610	geckodriver	INFO	geckodriver 0.21.0
+1535142418635	geckodriver	INFO	Listening on 127.0.0.1:49375
+1535142419615	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NsWelxiMiLle"
+
+(firefox:23558): Gtk-WARNING **: 20:26:59.738: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23622): Gtk-WARNING **: 20:27:04.423: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:23687): Gtk-WARNING **: 20:27:06.524: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535142427346	Marionette	INFO	Listening on port 35997
+1535142427400	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 23204, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 23558, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 22998, Gecko_IOThread] WARNING: pipe error (61): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535153247484	geckodriver	INFO	geckodriver 0.21.0
+1535153247500	geckodriver	INFO	Listening on 127.0.0.1:38871
+1535153248500	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.l9SUGIBaXKX7"
+
+(firefox:24193): Gtk-WARNING **: 23:27:28.637: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24251): Gtk-WARNING **: 23:27:32.686: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24297): Gtk-WARNING **: 23:27:34.370: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535153255128	Marionette	INFO	Listening on port 37099
+1535153255185	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535153265586	geckodriver	INFO	geckodriver 0.21.0
+1535153265623	geckodriver	INFO	Listening on 127.0.0.1:37587
+1535153266584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1EirKYKA2WFC"
+
+(firefox:24350): Gtk-WARNING **: 23:27:46.706: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24411): Gtk-WARNING **: 23:27:50.349: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24447): Gtk-WARNING **: 23:27:52.291: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535153273026	Marionette	INFO	Listening on port 44293
+1535153273132	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535153281743	geckodriver	INFO	geckodriver 0.21.0
+1535153281780	geckodriver	INFO	Listening on 127.0.0.1:59941
+1535153282760	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.VagiVM4B6VYN"
+
+(firefox:24510): Gtk-WARNING **: 23:28:02.851: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24576): Gtk-WARNING **: 23:28:06.910: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24615): Gtk-WARNING **: 23:28:08.921: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535153289267	Marionette	INFO	Listening on port 40385
+1535153289482	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535153300338	geckodriver	INFO	geckodriver 0.21.0
+1535153300348	geckodriver	INFO	Listening on 127.0.0.1:39561
+1535153301344	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qXfeu44XUbo7"
+
+(firefox:24676): Gtk-WARNING **: 23:28:21.451: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24743): Gtk-WARNING **: 23:28:26.040: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:24795): Gtk-WARNING **: 23:28:29.796: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535153309891	Marionette	INFO	Listening on port 37755
+1535153309982	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 24193, Gecko_IOThread] WARNING: pipe error (74): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 24350, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535164132231	geckodriver	INFO	geckodriver 0.21.0
+1535164132255	geckodriver	INFO	Listening on 127.0.0.1:44635
+1535164133242	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UsdGHTb5VhEC"
+
+(firefox:25213): Gtk-WARNING **: 02:28:53.316: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25278): Gtk-WARNING **: 02:28:57.334: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25322): Gtk-WARNING **: 02:28:59.583: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535164139811	Marionette	INFO	Listening on port 34225
+1535164140053	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535164150039	geckodriver	INFO	geckodriver 0.21.0
+1535164150056	geckodriver	INFO	Listening on 127.0.0.1:58989
+1535164151047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ovOqe2H2hCXW"
+
+(firefox:25372): Gtk-WARNING **: 02:29:11.104: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25443): Gtk-WARNING **: 02:29:15.131: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25491): Gtk-WARNING **: 02:29:17.617: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535164158227	Marionette	INFO	Listening on port 39469
+1535164158261	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535164167197	geckodriver	INFO	geckodriver 0.21.0
+1535164167209	geckodriver	INFO	Listening on 127.0.0.1:38847
+1535164168209	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.93CkrOEjOEW4"
+
+(firefox:25542): Gtk-WARNING **: 02:29:28.311: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25603): Gtk-WARNING **: 02:29:32.205: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25640): Gtk-WARNING **: 02:29:33.978: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535164174199	Marionette	INFO	Listening on port 38439
+1535164174314	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535164185555	geckodriver	INFO	geckodriver 0.21.0
+1535164185570	geckodriver	INFO	Listening on 127.0.0.1:58579
+1535164186563	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uZmcoGm0N1zk"
+
+(firefox:25705): Gtk-WARNING **: 02:29:46.660: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25763): Gtk-WARNING **: 02:29:50.470: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:25828): Gtk-WARNING **: 02:29:52.644: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535164192977	Marionette	INFO	Listening on port 38661
+1535164193062	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 25542, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535175010411	geckodriver	INFO	geckodriver 0.21.0
+1535175010419	geckodriver	INFO	Listening on 127.0.0.1:48453
+1535175011417	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.I24YslL8SeCy"
+
+(firefox:26739): Gtk-WARNING **: 05:30:11.536: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:26849): Gtk-WARNING **: 05:30:15.106: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:26910): Gtk-WARNING **: 05:30:17.036: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535175017745	Marionette	INFO	Listening on port 34371
+1535175017812	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535175027743	geckodriver	INFO	geckodriver 0.21.0
+1535175027775	geckodriver	INFO	Listening on 127.0.0.1:49273
+1535175028738	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sjwdXmHyDExJ"
+
+(firefox:26965): Gtk-WARNING **: 05:30:28.820: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:27040): Gtk-WARNING **: 05:30:32.518: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:27095): Gtk-WARNING **: 05:30:34.438: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535175035460	Marionette	INFO	Listening on port 36479
+1535175035497	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535175043174	geckodriver	INFO	geckodriver 0.21.0
+1535175043206	geckodriver	INFO	Listening on 127.0.0.1:36057
+1535175044181	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.74NECfWJy8Ys"
+
+(firefox:27153): Gtk-WARNING **: 05:30:44.322: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:27247): Gtk-WARNING **: 05:30:48.251: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:27300): Gtk-WARNING **: 05:30:50.328: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535175050992	Marionette	INFO	Listening on port 40571
+1535175051083	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535175056974	geckodriver	INFO	geckodriver 0.21.0
+1535175057013	geckodriver	INFO	Listening on 127.0.0.1:47195
+1535175057983	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4iqrp1QTYWbP"
+
+(firefox:27357): Gtk-WARNING **: 05:30:58.071: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:27419): Gtk-WARNING **: 05:31:02.176: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:27471): Gtk-WARNING **: 05:31:03.994: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535175064926	Marionette	INFO	Listening on port 33415
+1535175065018	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 26965, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 27357, Gecko_IOThread] WARNING: pipe error (71): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535185883793	geckodriver	INFO	geckodriver 0.21.0
+1535185883817	geckodriver	INFO	Listening on 127.0.0.1:37913
+1535185884801	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.M5VgLUlAkm2T"
+
+(firefox:29483): Gtk-WARNING **: 08:31:24.902: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:29547): Gtk-WARNING **: 08:31:28.704: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:29589): Gtk-WARNING **: 08:31:30.742: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535185891189	Marionette	INFO	Listening on port 33765
+1535185891378	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535185901912	geckodriver	INFO	geckodriver 0.21.0
+1535185901932	geckodriver	INFO	Listening on 127.0.0.1:49625
+1535185902904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1Jxoi38BmYa4"
+
+(firefox:29638): Gtk-WARNING **: 08:31:42.980: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:29719): Gtk-WARNING **: 08:31:46.812: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:29758): Gtk-WARNING **: 08:31:48.823: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535185909349	Marionette	INFO	Listening on port 32853
+1535185909394	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535185916122	geckodriver	INFO	geckodriver 0.21.0
+1535185916152	geckodriver	INFO	Listening on 127.0.0.1:41627
+1535185917132	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.F1CKjnmlbSyG"
+
+(firefox:29810): Gtk-WARNING **: 08:31:57.200: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:29882): Gtk-WARNING **: 08:32:01.697: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:29919): Gtk-WARNING **: 08:32:03.753: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535185924214	Marionette	INFO	Listening on port 42507
+1535185924342	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535185932466	geckodriver	INFO	geckodriver 0.21.0
+1535185932510	geckodriver	INFO	Listening on 127.0.0.1:59513
+1535185933484	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.of70UeeB203W"
+
+(firefox:29976): Gtk-WARNING **: 08:32:13.584: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:30043): Gtk-WARNING **: 08:32:18.329: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:30089): Gtk-WARNING **: 08:32:21.539: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535185941792	Marionette	INFO	Listening on port 38573
+1535185941956	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 29483, Gecko_IOThread] WARNING: pipe error (62): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535196762356	geckodriver	INFO	geckodriver 0.21.0
+1535196762366	geckodriver	INFO	Listening on 127.0.0.1:36023
+1535196763369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0BdWPHy1GptS"
+
+(firefox:32340): Gtk-WARNING **: 11:32:43.411: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:32426): Gtk-WARNING **: 11:32:45.676: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535196766902	Marionette	INFO	Listening on port 39537
+1535196766989	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:32478): Gtk-WARNING **: 11:32:47.455: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535196777573	geckodriver	INFO	geckodriver 0.21.0
+1535196777583	geckodriver	INFO	Listening on 127.0.0.1:59317
+1535196778581	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WMlngsk0ao0c"
+
+(firefox:32528): Gtk-WARNING **: 11:32:58.685: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:32612): Gtk-WARNING **: 11:33:00.934: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535196782157	Marionette	INFO	Listening on port 40783
+1535196782228	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:32649): Gtk-WARNING **: 11:33:02.755: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535196788083	geckodriver	INFO	geckodriver 0.21.0
+1535196788092	geckodriver	INFO	Listening on 127.0.0.1:37789
+1535196789092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2kf5qcHxnlJp"
+
+(firefox:32698): Gtk-WARNING **: 11:33:09.131: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:316): Gtk-WARNING **: 11:33:11.409: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535196792599	Marionette	INFO	Listening on port 46603
+1535196792636	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:363): Gtk-WARNING **: 11:33:13.083: Locale not supported by C library.
+	Using the fallback 'C' locale.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 32340, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 32698, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535196803806	geckodriver	INFO	geckodriver 0.21.0
+1535196803813	geckodriver	INFO	Listening on 127.0.0.1:47575
+1535196804814	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mH8Dt9GZsgCm"
+
+(firefox:441): Gtk-WARNING **: 11:33:24.852: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:508): Gtk-WARNING **: 11:33:26.872: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535196808044	Marionette	INFO	Listening on port 44147
+1535196808128	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:545): Gtk-WARNING **: 11:33:28.516: Locale not supported by C library.
+	Using the fallback 'C' locale.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535207619330	geckodriver	INFO	geckodriver 0.21.0
+1535207619338	geckodriver	INFO	Listening on 127.0.0.1:45151
+1535207620340	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iCFg5sTcQuRb"
+
+(firefox:1042): Gtk-WARNING **: 14:33:40.385: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1139): Gtk-WARNING **: 14:33:42.720: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1183): Gtk-WARNING **: 14:33:44.069: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535207624192	Marionette	INFO	Listening on port 38415
+1535207624318	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535207637820	geckodriver	INFO	geckodriver 0.21.0
+1535207637835	geckodriver	INFO	Listening on 127.0.0.1:46215
+1535207638816	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LpnXBzAFQw66"
+
+(firefox:1234): Gtk-WARNING **: 14:33:58.865: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1306): Gtk-WARNING **: 14:34:06.442: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1368): Gtk-WARNING **: 14:34:07.818: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535207647919	Marionette	INFO	Listening on port 43705
+1535207648028	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535207660511	geckodriver	INFO	geckodriver 0.21.0
+1535207660537	geckodriver	INFO	Listening on 127.0.0.1:48097
+1535207661527	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.mg78jFVyREVD"
+
+(firefox:1422): Gtk-WARNING **: 14:34:21.577: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1492): Gtk-WARNING **: 14:34:23.989: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1548): Gtk-WARNING **: 14:34:25.409: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535207665542	Marionette	INFO	Listening on port 44033
+1535207665684	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535207675181	geckodriver	INFO	geckodriver 0.21.0
+1535207675214	geckodriver	INFO	Listening on 127.0.0.1:51635
+1535207676185	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EWb7WTXmiGBg"
+
+(firefox:1611): Gtk-WARNING **: 14:34:36.233: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1739): Gtk-WARNING **: 14:34:38.832: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:1782): Gtk-WARNING **: 14:34:40.110: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535207680280	Marionette	INFO	Listening on port 40251
+1535207680355	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 1042, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Parent 1234, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 1422, Gecko_IOThread] WARNING: pipe error (67): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 1611, Gecko_IOThread] WARNING: pipe error (65): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535218931383	geckodriver	INFO	geckodriver 0.21.0
+1535218931407	geckodriver	INFO	Listening on 127.0.0.1:46655
+1535218932391	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BjGIJydOIyAL"
+
+(firefox:2529): Gtk-WARNING **: 17:42:12.518: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:2602): Gtk-WARNING **: 17:42:18.154: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:2658): Gtk-WARNING **: 17:42:21.269: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535218941868	Marionette	INFO	Listening on port 44133
+1535218941914	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535218953590	geckodriver	INFO	geckodriver 0.21.0
+1535218953613	geckodriver	INFO	Listening on 127.0.0.1:36543
+1535218954599	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UYT0ziLKlYEk"
+
+(firefox:2702): Gtk-WARNING **: 17:42:34.763: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:2764): Gtk-WARNING **: 17:42:39.064: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:2804): Gtk-WARNING **: 17:42:42.109: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535218963560	Marionette	INFO	Listening on port 40509
+1535218963663	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535218975062	geckodriver	INFO	geckodriver 0.21.0
+1535218975090	geckodriver	INFO	Listening on 127.0.0.1:46545
+1535218976080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dlHl5QNISjnA"
+
+(firefox:2859): Gtk-WARNING **: 17:42:56.174: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:2933): Gtk-WARNING **: 17:43:01.676: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:2984): Gtk-WARNING **: 17:43:05.429: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535218986588	Marionette	INFO	Listening on port 38703
+1535218986634	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535218996324	geckodriver	INFO	geckodriver 0.21.0
+1535218996389	geckodriver	INFO	Listening on 127.0.0.1:34831
+1535218997325	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wbRJiFq7bSrk"
+
+(firefox:3030): Gtk-WARNING **: 17:43:17.410: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:3160): Gtk-WARNING **: 17:43:22.684: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:3229): Gtk-WARNING **: 17:43:26.580: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535219006944	Marionette	INFO	Listening on port 46355
+1535219007172	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2529, Gecko_IOThread] WARNING: pipe error (69): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 3030, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535229828727	geckodriver	INFO	geckodriver 0.21.0
+1535229828780	geckodriver	INFO	Listening on 127.0.0.1:47749
+1535229829735	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.W1JD6Fv2EGTC"
+
+(firefox:3652): Gtk-WARNING **: 20:43:49.827: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:3716): Gtk-WARNING **: 20:43:53.764: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:3777): Gtk-WARNING **: 20:43:55.792: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535229835965	Marionette	INFO	Listening on port 34139
+1535229836122	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535229847564	geckodriver	INFO	geckodriver 0.21.0
+1535229847597	geckodriver	INFO	Listening on 127.0.0.1:58767
+1535229848570	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sFYxR3TgXruU"
+
+(firefox:3831): Gtk-WARNING **: 20:44:08.655: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:3952): Gtk-WARNING **: 20:44:12.416: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:4002): Gtk-WARNING **: 20:44:14.664: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535229854884	Marionette	INFO	Listening on port 45021
+1535229855020	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535229867652	geckodriver	INFO	geckodriver 0.21.0
+1535229867681	geckodriver	INFO	Listening on 127.0.0.1:46867
+1535229868648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RAiprYPEW9Aj"
+
+(firefox:4059): Gtk-WARNING **: 20:44:28.734: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:4133): Gtk-WARNING **: 20:44:32.288: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:4180): Gtk-WARNING **: 20:44:34.087: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535229874365	Marionette	INFO	Listening on port 42317
+1535229874515	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535229885611	geckodriver	INFO	geckodriver 0.21.0
+1535229885666	geckodriver	INFO	Listening on 127.0.0.1:57505
+1535229886624	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.idkcM0rkotBk"
+
+(firefox:4243): Gtk-WARNING **: 20:44:46.698: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:4308): Gtk-WARNING **: 20:44:50.488: Locale not supported by C library.
+	Using the fallback 'C' locale.
+
+(/usr/lib/firefox/firefox:4353): Gtk-WARNING **: 20:44:52.897: Locale not supported by C library.
+	Using the fallback 'C' locale.
+1535229893051	Marionette	INFO	Listening on port 41027
+1535229893215	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 4059, Gecko_IOThread] WARNING: pipe error (76): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
