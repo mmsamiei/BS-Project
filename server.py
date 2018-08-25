@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from bm25 import BM25
 from flask import jsonify, request
 app = Flask(__name__)
+bm25 = BM25()
 
 @app.route('/help')
 def help():
@@ -19,7 +20,7 @@ def idf():
 @app.route('/search', methods=['GET'])
 def search():
     word = request.args.get('q')
-    bm25 = BM25()
+    #bm25 = BM25()
     results = bm25.search(word)[:100]
     if len(results) == 0:
         return render_template('no-result.html')
